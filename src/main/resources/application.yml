@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: skills-agent-example
+  ai:
+    dashscope:
+      api-key: ${AI_DASHSCOPE_API_KEY}
+    minimax:
+      api-key: ${MINIMAX_API_KEY}
+server:
+  port: 8080
+
+logging:
+    level:
+      org.springframework.ai.*: DEBUG
