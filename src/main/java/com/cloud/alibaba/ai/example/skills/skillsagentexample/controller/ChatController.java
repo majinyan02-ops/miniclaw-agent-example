@@ -22,6 +22,8 @@ public class ChatController {
     @GetMapping("/chat")
     public String chat(@RequestParam("message")String message) throws GraphRunnerException {
             System.out.println("开始执行");
+            System.out.println("pr test");
+            System.out.println("pr2");
             if (agent == null) {
                 agent = skillsAgent.buildAgent(chatModel);
             }
